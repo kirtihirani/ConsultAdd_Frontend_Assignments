@@ -1,0 +1,55 @@
+ <!DOCTYPE html>
+<head>
+    <style>
+        #container {
+            margin-top:300px ;
+  position: relative;
+}
+
+.circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+#circle1 {
+  width: 200px;
+  height: 200px;
+  background: red;
+}
+
+#circle2 {
+  width: 150px;
+  height: 150px;
+  background: blue;
+}
+
+#circle3 {
+  width: 100px;
+  height: 100px;
+  background: green;
+}
+    </style>
+    <script>
+        function showAlert(){
+            alert("c1");
+        }
+        function showAlert1(){
+            alert("c2");
+        }
+        function showAlert2(){
+            alert("c3");
+        }
+
+    </script>
+</head>
+<body>
+    <div id="container">
+        <div class="circle" id="circle1" onclick="showAlert()"></div>
+        <div class="circle" id="circle2" onclick="showAlert1()"></div>
+        <div class="circle" id="circle3" onclick="showAlert2()"></div>
+    </div>
+</body>
+</html>
